@@ -19,17 +19,10 @@ public class Tester {
         Utilities.dsiplayVehicles(vehicles);
 
         //Turn Cooling ON in for all objects
-        ((Car) vehicles[0]).setCoolingOn(true);
-        ((Car) vehicles[1]).setCoolingOn(true);
-        ((Car) vehicles[2]).setCoolingOn(true);
-        ((Truck) vehicles[3]).setCoolingOn(true);
-        ((Truck) vehicles[4]).setCoolingOn(true);
+        Utilities.turnCoolingForAll(vehicles);
 
         System.out.println("Cooling ON:");
         Utilities.dsiplayVehicles(vehicles);
 
-/*        W osobnej klasie utwórz tablicę zawierającą kilka pojazdów (z wyłączoną klimatyzacją),
-        wyświetl o nich podstawowe informacje oraz informację o zasięgu danego pojazdu.
-                Następnie włącz klimatyzację we wszystkich pojazdach i wyświetl te same informacje jeszcze raz.*/
     }
 }
